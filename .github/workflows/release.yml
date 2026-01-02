@@ -236,7 +236,7 @@ jobs:
           targets: "x86_64-apple-darwin, aarch64-apple-darwin"
         if: matrix.target == 'universal-apple-darwin'
       - name: Install bindgen-cli
-        uses: taiki-e/cache-cargo-install-action@v2
+        uses: taiki-e/cache-cargo-install-action@v3
         with:
           tool: bindgen-cli
         if: |
@@ -401,7 +401,7 @@ jobs:
         with:
           toolchain: stable
       - name: Install Cargo Deb
-        uses: taiki-e/cache-cargo-install-action@v2
+        uses: taiki-e/cache-cargo-install-action@v3
         with:
           tool: cargo-deb
       - name: Install cross-compilation tools

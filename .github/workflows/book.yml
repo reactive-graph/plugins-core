@@ -44,12 +44,12 @@ jobs:
         with:
           mdbook-version: 'latest'
       - name: Install preprocessor mdbook-mermaid
-        uses: taiki-e/cache-cargo-install-action@v2
+        uses: taiki-e/cache-cargo-install-action@v3
         with:
           tool: mdbook-mermaid
 
       - name: Install preprocessor mdbook-preprocessor-graphql-playground
-        uses: taiki-e/cache-cargo-install-action@v2
+        uses: taiki-e/cache-cargo-install-action@v3
         with:
           tool: mdbook-preprocessor-graphql-playground
       - name: Build Book
